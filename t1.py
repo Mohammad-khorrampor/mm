@@ -41,20 +41,62 @@
 # res= sum_of_nums(num1,num2)
 # print(res)
 
-def max(a,b):
-    if a>b:
-        return a
-    elif a==b:
-        res="balance"
-        return res
-    else:
-        return b
+# def max(a,b):
+#     if a>b:
+#         return a
+#     elif a==b:
+#         res="balance"
+#         return res
+#     else:
+#         return b
 
 
 
-a=int(input())
-b=int(input())
-max_of_nums=max(a,b)
-print(f"max of two
-number{a}and{b}is:
-{max_of_nums}")       
+# a=int(input())
+# b=int(input())
+# max_of_nums=max(a,b)
+# print(f"max of two
+# number{a}and{b}is:
+# {max_of_nums}")       
+
+# def hello(user="Guest"):
+#     print(user)
+# # hello()
+# hello("shayan")
+
+# def std(name,age):
+#     print(name)
+#     print(age)
+# # std(age=23,name="shayan")
+# std("shayan",23)
+
+# def sum_n(num1,num2):
+#     sum=num1+num2
+#     return sum
+
+# def sub_n(num1,num2):
+#     sub=num1-num2
+#     return sub
+
+# def mult_n(num1,num2):
+#     mult=num1*num2
+#     return mult
+
+# def div_n(num1,num2):
+#     div=num1/num2
+#     return div
+
+# s=sum_n(10,2)
+# su=sub_n(10,5)
+# m=mult_n(2,6)
+# d=div_n(10,2)
+
+# print(f"sum={s} and sub={su} and mult={m} and div={d}")
+
+def avg_n(num1,num2,num3):
+     sum=num1+num2+num3
+     avg=sum/3
+     return avg
+avg_n(num3=10,num2=10,num1=20)
+avg_n=a
+print(f"avg={a}")
