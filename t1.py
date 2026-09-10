@@ -93,10 +93,96 @@
 
 # print(f"sum={s} and sub={su} and mult={m} and div={d}")
 
-def avg_n(num1,num2,num3):
-     sum=num1+num2+num3
-     avg=sum/3
-     return avg
-avg_n(num3=10,num2=10,num1=20)
-avg_n=a
-print(f"avg={a}")
+# def avg_n(num1,num2,num3):
+#      sum=num1+num2+num3
+#      avg=sum/3
+#      return avg
+# avg_n(num3=10,num2=10,num1=20)
+# avg_n=a
+# print(f"avg={a}")
+
+# def mult_n(num1,num2,num3):
+#      mult=num1*num2*num3
+#      float(mult)=m
+#      return m
+# mult_n(num3=10,num2=10,num1=20)
+# mult_n=a
+# print(f"avg={a}")
+
+
+# def add(a, b):
+#     return a + b
+
+# def subtract(a, b):
+#     return a - b
+
+# def multiply(a, b):
+#     return a * b
+
+# def divide(a, b):
+#     if b == 0:
+#         return "error:tagsim bar 0 momken nist"
+#     return  a / b
+
+# print("the four basic operations:")
+# print("1.add")
+# print("2.sub")
+# print("3.mult")
+# print("4.div")
+
+# choice = input("select the desired opration(1/2/3/4)")
+# num1 = float(input("enter the frist number : ")) 
+# num2 = float(input("enter the second number : "))
+
+# if choice == "1":
+#     result = add(num1 , num2)
+#     print("result:", result)
+# elif choice == "2":
+#     result = subtract(num1 , num2)
+#     print("result:", result)
+# elif choice == "3":
+#     result = multiply(num1 , num2)
+#     print("result:", result)
+# elif choice == "4":
+#     result = divide(num1 , num2)
+#     print("result:", result)
+# else:
+#     print("invalid opreration")
+
+# import math
+# import random
+# print(math.sqrt(25))
+# print(random.randint(1,10))
+# names=["ali","vali","goli"]
+# print(random.choice(names))
+# import math
+# print(math.sqrt(36))
+# print(math.pow(2,4))
+# print(math.pi)
+# calculator.py
+
+def calculate(num1, operator, num2):
+    if operator == '+':
+        return num1 + num2
+    elif operator == '-':
+        return num1 - num2
+    elif operator == '*':
+        return num1 * num2
+    elif operator == '/':
+        if num2 == 0:
+            return "Error: Division by zero is not allowed!"
+        return num1 / num2
+    else:
+        return "Invalid operator! Only +, -, *, / are allowed!"
+
+
+if __name__ == "__main__":
+    print("--- Simple Calculator ---")
+    try:
+        num1 = float(input("Enter the first number: "))
+        op = input("Operator (+, -, *, /): ")
+        num2 = float(input("Enter the second number: "))
+        result = calculate(num1, op, num2)
+        print(f"Result: {result}")
+    except ValueError:
+        print("Error: Please enter a valid number!")
