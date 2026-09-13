@@ -160,29 +160,41 @@
 # print(math.pow(2,4))
 # print(math.pi)
 # calculator.py
+# op=str(input("enter op: "))
+# num1=float(input("number1:"))
+# num2=float(input("number2: "))
 
-def calculate(num1, operator, num2):
-    if operator == '+':
-        return num1 + num2
-    elif operator == '-':
-        return num1 - num2
-    elif operator == '*':
-        return num1 * num2
-    elif operator == '/':
-        if num2 == 0:
-            return "Error: Division by zero is not allowed!"
-        return num1 / num2
-    else:
-        return "Invalid operator! Only +, -, *, / are allowed!"
+# def num_check(a):
+#     match a:
+#         case 0:
+#             return "adad 0 ast"
+#         case 1:
+#             return "adad 1 ast"
+#         case a if a>0:
+#             return "adad mosbat ast"
+#         case a if a<0:
+#             return "adad manfi ast"
+#         case _:
+#             return "na moshakhase"
+# a= int(input("adad vared konid : "))
+# res = num_check(a)
+# print(res)
 
+# file = open("test.txt","w")
+# file.write("hello")
+# file.close()
+# file = open("test.txt","r")
+# print(file.read())
+# file.close()
+# file = open("test.txt","a")
+# file.write("\n shayan")
+# file.close()
 
-if __name__ == "__main__":
-    print("--- Simple Calculator ---")
-    try:
-        num1 = float(input("Enter the first number: "))
-        op = input("Operator (+, -, *, /): ")
-        num2 = float(input("Enter the second number: "))
-        result = calculate(num1, op, num2)
-        print(f"Result: {result}")
-    except ValueError:
-        print("Error: Please enter a valid number!")
+n = int(input("How many students can you enter? "))
+file = open("students.txt","w")
+for i in range(n):
+    name = input("name : ")
+    students_id = ("students id number : ")
+    age = input("age : ")
+    file.write(f"{name},{students_id},{age}\n")
+print("\n saved in the students file . ")

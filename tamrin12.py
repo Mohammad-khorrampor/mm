@@ -1,0 +1,11 @@
+n = int(input("How many students can you enter? "))
+file = open("students.txt","w")
+for i in range(n):
+    name = input("name : ")
+    students_id = input("students id number : ")
+    age = input("age : ")
+    file.write(f"name : {name}\n")
+    file.write(f"students_id : {students_id}\n")
+    file.write(f"age : {age}\n")
+    file.write("--------------------\n")
+print("\n saved in the students file . ")

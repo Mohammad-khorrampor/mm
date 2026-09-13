@@ -13,7 +13,7 @@ def calculate(num1, operator, num2):
         return "Invalid operator! Only +, -, *, / are allowed!"
 
 
-if __name__ == "__main__":
+
     print("--- Simple Calculator ---")
     try:
         num1 = float(input("Enter the first number: "))
