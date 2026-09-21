@@ -1,5 +1,5 @@
 n = int(input("How many students can you enter? "))
-file = open("students.txt","w")
+file = open("students.txt","a")
 for i in range(n):
     name = input("name : ")
     students_id = input("students id number : ")
