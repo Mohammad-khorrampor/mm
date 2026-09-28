@@ -190,11 +190,25 @@
 # file.write("\n shayan")
 # file.close()
 
-n = int(input("How many students can you enter? "))
-file = open("students.txt","w")
-for i in range(n):
-    name = input("name : ")
-    students_id = ("students id number : ")
-    age = input("age : ")
-    file.write(f"{name},{students_id},{age}\n")
-print("\n saved in the students file . ")
+# import module_cal
+
+# result = module_cal.calculate(10, '+', 5)
+# print(result)
+
+# result2 = module_cal.calculate(20, '/', 4)
+# print(result2)
+# n = int(input("result"))
+# file = open("cal.txt","a")
+# for i in range(n):
+#     opreration = input("result :")
+#     file.write(f"name : {name}\n")
+#     file.write("--------------------\n")
+# print("\n saved in the students file . ")
+
+class Std :
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+s1=Std("shayan",23)
+print(s1.name)
+print(s1.age)
