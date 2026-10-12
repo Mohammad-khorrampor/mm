@@ -205,10 +205,36 @@
 #     file.write("--------------------\n")
 # print("\n saved in the students file . ")
 
-class Std :
-    def __init__(self,name,age):
-        self.name=name
-        self.age=age
-s1=Std("shayan",23)
-print(s1.name)
-print(s1.age)
+# class Std :
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+# s1=Std("shayan",23)
+# print(s1.name)
+# print(s1.age)
+
+# def login_req(func):
+#     def wrapper():
+#         is_admin=True
+#         if is_admin:
+#             func()
+#         else:
+#             print("dastrasi nadarid")
+
+#     return wrapper
+
+# @login_req
+# def dashboard():
+#     print("داشبورد")
+# dashboard()
+
+class anml :
+    def sound(self):
+        print("miooooo")
+    def eat(self):
+        print("fish")
+class cat(anml):
+    pass
+masal=cat()
+masal.eat()
+masal.sound()
